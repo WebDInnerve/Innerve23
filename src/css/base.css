@@ -254,7 +254,7 @@ main::after {
 	margin: 0;
 	position: relative;
 	z-index: 1;
-	border: 20px dashed;
+	border: 20px rgba(0, 0, 0, 0.608) dashed;
 	
 }
 
