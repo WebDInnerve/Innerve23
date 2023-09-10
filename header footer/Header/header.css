@@ -4,6 +4,7 @@ body {
 }
 
 nav {
+    
     box-shadow: 0 6px 6px gray;
     position: fixed;
     z-index: 10;
@@ -11,10 +12,19 @@ nav {
     right: 0;
     top: 0;
     font-family: 'Montserrat', 'sans-serif';
-    height: 100px;
+    height: 80px;
     background-color:black;
     padding: 0 5%;
 
+}
+nav .logo { 
+    margin-top: 15px;
+    float: left;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
 }
 
 nav .links {
@@ -90,7 +100,7 @@ nav .icon-burger .line {
         z-index: 9;
         left: 0;
         right: 0;
-        top: 100px;
+        top: 80px;
         bottom: 100%;
         width: auto;
         height: auto;
