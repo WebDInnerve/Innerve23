@@ -5,7 +5,7 @@ body {
     /* Dark bluish-green background */
     font-family: 'Segoe Script', bold;
     background-image: linear-gradient(#040D12, #14141F);
-    background-repeat: repeat-y;
+    background-repeat: repeat;
 }
 
 .header {
@@ -48,17 +48,9 @@ body {
 }
 
 
-@media screen and (max-width:60em){
-    body {
-        margin: 0;
-        padding: 0;
-        /* background-color: #15202b; */
-        /* Dark bluish-green background */
-        font-family: 'Segoe Script', bold;
-        background-image: linear-gradient(#040D12, #14141F);
-        background-repeat: repeat-y;
-    }
-}
+/* @media screen and (max-width:60em){
+    
+} */
 .sponsors {
     display: flex;
     flex-wrap: wrap;
@@ -75,13 +67,31 @@ body {
     .sponsors {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 25px auto;
-        max-width: 1000px;
-        width: 30vw;
+        /* justify-content: space-evenly; */
+        /* margin: 25px auto; */
+        /* max-width: 1000px; */
+        /* width: 30vw; */
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
+        /* gap: 15px; */
+    }
+    body {
+        margin: 1vmax;
+        padding: 0;
+        /* background-color: #15202b; */
+        /* Dark bluish-green background */
+        font-family: 'Segoe Script', bold;
+        background-image: linear-gradient(#040D12, #14141F);
+        background-repeat: repeat;
+    }
+    .neon-text {
+        padding: 4vmax;
+        margin-top: 50px;
+        font-size: 300%;
+        color: #00e6e6;
+        font-family: badrobotfont;
+        /* Pixelated neon bluish font */
+        text-shadow: 0 0 7px #09acac, 0 0 7px #09acac, 0 0 7px #09acac;
     }
 }
 
