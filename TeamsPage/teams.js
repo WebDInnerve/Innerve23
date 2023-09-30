@@ -277,3 +277,15 @@ image14.addEventListener("click", function() {
   // Toggle the state
   isLarge = !isLarge;
 });
+
+
+
+
+
+
+
+
+
+
+
+ 
