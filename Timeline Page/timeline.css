@@ -130,11 +130,7 @@ body {
   font-weight: bold;
  }
  
- 
- img {
-  max-width: 100%;
- }
- 
+
  
  .ag-format-container {
   width: 1160px;
@@ -144,7 +140,8 @@ body {
   position: relative;
  }
  
- 
+
+
  .ag-timeline-block {
   padding: 120px 0;
   
@@ -299,32 +296,8 @@ body {
   -o-transform: translateX(0);
   transform: translateX(0);
  }
- .ag-timeline-card_arrow {
-  height: 18px;
-  width: 18px;
-  margin-top: 20px;
-  background-color: #282828;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
- }
- .ag-timeline_item:nth-child(2n + 1) .ag-timeline-card_arrow {
-  margin-left: calc(-18px / 2);
-  margin-right: calc(-18px / 2);
- }
- .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
-  margin-left: -10px;
- 
- 
-  right: auto;
-  left: 0;
- }
+
+
  .ag-timeline-card_img {
   width: 60%;
  }
@@ -536,6 +509,9 @@ body {
     height: auto;
     width: 60%;
   }
+  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_img-box {
+    left: -20%;
+  }
  }
  
  
@@ -561,9 +537,7 @@ body {
  }
  
  
- @media only screen and (max-width: 479px) {
- }
- 
+
  
  @media (min-width: 768px) and (max-width: 979px) {
   .ag-format-container {
@@ -600,9 +574,7 @@ body {
     left: -100%;
     text-align: left;
   }
-  .ag-timeline_item:nth-child(2n + 1) .ag-timeline-card_img-box {
-    margin-left: 100px;
-  }
+
  }
  
 
@@ -1210,5 +1182,21 @@ body {
     z-index: 0;
     width: 70%;
     height: 70%;
+  }
+}
+
+
+    #nextButton {
+      cursor: pointer;
+  }
+  #prevButton {
+    cursor: pointer;
+}
+
+
+/* Media query for mobile devices with a maximum width of 768px */
+@media (max-width: 768px) {
+  .hero {
+      font-size: 34px; /* Decreased font size for mobile */
   }
 }

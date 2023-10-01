@@ -23,6 +23,7 @@ html {
 h1{
     font-family: 'Aladin', cursive;
     font-size: 7rem;
+    margin-top: 2%;
     color: #feffb9;
     text-shadow: 2px 2px 4px rgb(237, 145, 255);
 }
@@ -41,6 +42,7 @@ p{
   color: #320c53;
   text-shadow: 2px 2px 4px rgb(255, 200, 0);
 }
+
 /* .hide-holo .holo {
   display: none;
 } */
@@ -49,26 +51,23 @@ p{
   background-size:cover; /* Adjust this property as needed
   height: 20vh; */
   width: 100%;
-  margin-top: 3vh;
   text-align: center;
   position: relative; /* Required for absolute positioning of child elements */
   overflow: hidden;
- 
-  
 }
 .holo {
   position: absolute;
   z-index: -2;
   width: 200px;
   height: 50px;
-  background-color: rgba(0, 252, 252, 0.35);
+  background-color: rgba(100, 100, 100, 0.3); /* Adjust the color values and opacity */
   border-radius: 5%;
   filter: blur(10px);
   transform: perspective(100px) rotateX(-35deg);
   transform-style: preserve-3d;
   animation: holographic 1.5s infinite;
   backface-visibility: hidden;
-  margin-top: 450px;
+  margin-top: 475px;
   margin-left: 50px;
   overflow: hidden;
 }
@@ -80,7 +79,7 @@ p{
   right: -10px;
   content: "";
   height: 200px;
-  background-color: rgba(0, 252, 252, 0);
+  background-color: rgba(100, 100, 100, 0.3); 
   border-radius: 5%;
   filter: blur(2.5px);
   backface-visibility: hidden;
@@ -89,7 +88,7 @@ p{
 
 .holo + .holo {
   animation-duration: 0.75s;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 @keyframes float {
@@ -107,21 +106,21 @@ p{
   from {
     will-change: box-shadow;
     box-shadow:
-      0 -75px 5px rgba(215, 191, 216, 0.3), /* Light Purple */
-      0 -1px 2px rgba(215, 191, 216, 0.5), /* Light Purple */
-      0 -45px 5px rgba(215, 191, 216, 0.3), /* Light Purple */
-      0 -2px 3px rgba(215, 191, 216, 0.5), /* Light Purple */
-      0 -3px 4px rgba(215, 191, 216, 0.5), /* Light Purple */
-      0 -4px 6px rgba(215, 191, 216, 0.5), /* Light Purple */
-      0 -5px 10px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -7px 20px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -10px 30px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -15px 40px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -25px 50px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -35px 60px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -45px 70px rgba(215, 191, 216, 0.7), /* Light Purple */
-      0 -65px 80px rgba(215, 191, 216, 0.9), /* Light Purple */
-      0 -75px 90px rgba(215, 191, 216, 0.9); /* Light Purple */
+      0 -75px 5px rgba(100, 100, 100, 0.1), /* Light Purple */
+      0 -1px 2px rgba(100, 100, 100, 0.1), /* Light Purple */
+      0 -45px 5px rgba(168, 153, 168, 0.1), /* Light Purple */
+      0 -2px 3px rgba(168, 153, 168, 0.1), /* Light Purple */
+      0 -3px 4px rgba(100, 100, 100, 0.1), /* Light Purple */
+      0 -4px 6px rgba(168, 153, 168, 0.1), /* Light Purple */
+      0 -5px 10px rgba(168, 153, 168, 0.1), /* Light Purple */
+      0 -7px 20px rgba(168, 153, 168, 0.3), /* Light Purple */
+      0 -10px 30px rgba(168, 153, 168, 0.1), /* Light Purple */
+      0 -15px 40px rgba(168, 153, 168, 0.3), /* Light Purple */
+      0 -25px 50px rgba(168, 153, 168, 0.3), /* Light Purple */
+      0 -35px 60px rgba(168, 153, 168, 0.3), /* Light Purple */
+      0 -45px 70px rgba(168, 153, 168, 0.3), /* Light Purple */
+      0 -65px 80px rgba(168, 153, 168, 0.1), /* Light Purple */
+      0 -75px 90px rgba(132, 130, 96, 0.9); /* Light Purple */
   }
   to {
     will-change: unset;
@@ -147,6 +146,11 @@ p{
 
 
 .card{
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  margin: 60px; /* Adjust the margin to increase the distance between cards */
+  display: inline-block; /* Ensure the cards are displayed in a line */
+  vertical-align: top;
   width: 400px;
   /* background-image: url('card.png'); */
   text-align: center;
@@ -178,6 +182,8 @@ p{
     /* z-index: 3; */
     opacity: 1; /* Initially hidden */
     transition: opacity 0.2s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
     
     /* margin-bottom: 40px; */
     /* transition: opacity 0.2s ease-in-out; */
@@ -200,13 +206,14 @@ p{
   top: 0;
   left: 35%;
   right: 80%;
-  width:33%;
+  width:45%;
   margin-top:30%;
-  height:25%;
+  height:35%;
   z-index: 2;
   object-fit: cover;
   margin-bottom: 40px;
   text-align: center;
+  
 }
 /* .profile:hover{
   box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5); Apply the blue glow effect to the image on hover 
@@ -258,23 +265,39 @@ p{
 
 
  
+ 
 /* Styles for the popup container */
-.popup {
+/*.popup {
   display: block;
   position: absolute;
   left: 272px; /* Adjust the position as needed */
-  top: 0;
+  /*top: 0;
   background-color: transparent;
   border: 1px solid #ccc;
   background-color: #f7f2f2;
   padding: 10px;
   width: 50px; /* Adjust the width as needed */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   z-index: 1;
   border-radius: 0 10px 10px 0;
   margin-top: 120px; /* Add margin to separate from the card image */
-  height: 123px;
-}
+ /* height: 123px;
+}*/
+
+/*.popup {
+  position: absolute;
+  bottom: 50px; /* Adjust this value to set the desired distance from the bottom */
+  /*left: 49%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  /*border-radius: 10px; /* Add border-radius for curved corners */
+ /* border: 1px solid #ccc;
+  /*background-color: #f7f2f2;
+ 
+}*/
 
 /* .card-container:hover .popup {
   display: block;
@@ -282,7 +305,11 @@ p{
 .social-links {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  
 }
+
 
 .social-link {
   margin-bottom: 10px;
@@ -295,24 +322,119 @@ p{
   display: block;
 }
 .social-icon {
-  margin-bottom: 4px; /* Increase the distance between icons */
-}
-#my-link {
-  color: #ff0000; /* Initial color */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s; /* Smooth transition effect */
-}
+  margin: 0 8px; /* Add some spacing between icons if desired */
+ }
+ 
+.fa {
+   font-size: 30px; /* Adjust the icon size as needed */
+ }
+ 
 #mylink:hover{
   color: #9a9797;
 }
 #myImage1 {
-  width: 33%; /* Initial width */
-  height: 25%; /* Maintain aspect ratio */
-  transition: width height 0.3s; /* Add a smooth transition effect */
+  width: 40%; 
+  height: 30%; 
+  left: 30%;
+  transition: width height 0.3s; 
+}
+/* Default styles for the image */
+.profile{
+  width: 100%; /* Set the width to 100% of its container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Media query for screens with a maximum width of 768 pixels */
+/* @media (max-width: 768px) {
+  .profile {
+    width: 80%; /* Reduce the width for smaller screens */
+    /* height: auto; /* Automatically adjust the height */
+    /* margin-left: -100px; */
+    /* position: absolute; */ 
+  /* }
+} */ 
+
+/* Media query for screens with a maximum width of 480 pixels */
+@media (max-width: 480px) {
+  .profile {
+    width: 100%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -50px;
+    margin-bottom: -100px;
+    top: 20%;
+  }
+}
+@media (min-width: 769px) {
+  #myImage1 {
+    width: 40%; /* Set the width to 100% for screens larger than 768px */
+    height: auto; /* Automatically adjust the height */
+  }
+}
+@media (max-width: 769px) {
+  #myImage1 {
+    width: 40%; /* Set the width to 100% for screens larger than 768px */
+    height: auto; /* Automatically adjust the height */
+  }
+}
+@media (min-width: 769px) {
+  .profile {
+    width: 60%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 3%;
+    top: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .profile {
+    width: 60%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -1px;
+    margin-top: 20px;
+    top: 20%;
+  }
 }
 
 #myImage2 {
   width: 33%; /* Initial width */
   height: 25%; /* Maintain aspect ratio */
   transition: width height 0.3s; /* Add a smooth transition effect */
+}
+
+.popup-overlay {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 9999; /* Ensure it's on top of other elements */
+  margin-top: -300px;
+}
+
+/* Styles for the pop-up image */
+.profile {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  max-height: 80%; /* Adjust the maximum height as needed */
+  
+}
+.popup-overlay{
+  display: none;
+}
+
+
+
+.card {
+  margin: 200px; /* Adjust the margin to increase the distance between cards */
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-right: 40px;
+
+  
 }

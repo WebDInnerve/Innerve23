@@ -59,3 +59,102 @@
     });
   })(jQuery);
 
+
+
+// HEADING
+function updateNavigationButtons() {
+  const currentPage = window.location.pathname;
+  const basePath = currentPage.substring(0, currentPage.lastIndexOf('/') + 1); // Extract the base path
+
+  // Get the navigation buttons
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
+
+  // Hide ">" button on "day2.html"
+  if (currentPage.endsWith('day2.html')) {
+    nextButton.style.display = 'none';
+  } 
+
+  // Hide "<" button on "prefest.html"
+  if (currentPage.endsWith('prefest.html')) {
+    prevButton.style.display = 'none';
+  } 
+}
+
+// Function to redirect to the next page
+function nextPage() {
+  const currentPage = window.location.pathname;
+  const basePath = currentPage.substring(0, currentPage.lastIndexOf('/') + 1); // Extract the base path
+  if (currentPage.endsWith('prefest.html')) {
+    window.location.href = basePath + 'timeline.html';
+  } else if (currentPage.endsWith('timeline.html')) {
+    window.location.href = basePath + 'day2.html';
+  }
+  // Add more conditions for additional pages if needed
+}
+
+// Function to redirect to the previous page
+function prevPage() {
+  const currentPage = window.location.pathname;
+  const basePath = currentPage.substring(0, currentPage.lastIndexOf('/') + 1); // Extract the base path
+  if (currentPage.endsWith('day2.html')) {
+    window.location.href = basePath + 'timeline.html';
+  } else if (currentPage.endsWith('timeline.html')) {
+    window.location.href = basePath + 'prefest.html';
+  }
+  // Add more conditions for additional pages if needed
+}
+
+// Add an event listener for when the page loads
+window.addEventListener('load', () => {
+  updateNavigationButtons(); // Initially update button visibility
+});
+
+// Event listeners for the navigation buttons
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+if (prevButton && nextButton) {
+  prevButton.addEventListener('click', prevPage);
+  nextButton.addEventListener('click', nextPage);
+}
+
+/*we can use path name to impliment same function in heading like this:
+// Function to redirect to the next page
+function nextPage() {
+  const currentPage = window.location.pathname;
+  if (currentPage === '/prefest.html') {
+    window.location.href = '/timeline.html';
+  } else if (currentPage === '/timeline.html') {
+    window.location.href = '/day2.html';
+  }
+  // Add more conditions for additional pages if needed
+}
+
+// Function to redirect to the previous page
+function prevPage() {
+  const currentPage = window.location.pathname;
+  if (currentPage === '/day2.html') {
+    window.location.href = '/timeline.html';
+  } else if (currentPage === '/timeline.html') {
+    window.location.href = '/prefest.html';
+  }
+  // Add more conditions for additional pages if needed
+}
+
+// Add an event listener for when the page loads
+window.addEventListener('load', () => {
+  updateNavigationButtons(); // Initially update button visibility
+});
+
+// Event listeners for the navigation buttons
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+if (prevButton && nextButton) {
+  prevButton.addEventListener('click', prevPage);
+  nextButton.addEventListener('click', nextPage);
+}
+
+
+*/
