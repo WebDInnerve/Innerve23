@@ -29,7 +29,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: rgb(250, 195, 8);
+    background-color: black;
     animation: pulse 3s;
 }
 
@@ -92,17 +92,17 @@ body {
 
     50% {
         width: 50%;
-        background-color: #d0bdf4;
+        background-color: white;
     }
 
     75% {
         width: 75%;
-        background-color: #d2d2d2;
+        background-color: white;
     }
 
     100% {
         width: 100%;
-        background-color: rgb(250, 195, 8);
+        background-color: white;
     }
 
 }
@@ -110,27 +110,27 @@ body {
 @keyframes pulse {
     0% {
 
-        background-color: #1f1141;
+        background-image: url("./bg3.png");
     }
 
-    25% {
+    /* 25% {
 
         background-color: #1f1141;
-    }
+    } */
 
     50% {
 
-        background-color: #d0bdf4;
+        background-image: url("./bg2.png");
     }
 
-    75% {
+    /* 75% {
 
         background-color: #A2678A;
-    }
+    } */
 
     100% {
 
-        background-color: rgb(250, 195, 8);
+        background-image: url("./bg1.png");
     }
 
 }
