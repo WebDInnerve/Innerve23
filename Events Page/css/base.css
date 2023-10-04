@@ -25,6 +25,7 @@ body {
 	background-image: url(../img/Mainpage-bg.png);
   background-size: cover;
   background-attachment: fixed;
+  overflow-x:hidden;
 }
 
 /* Page Loader */
