@@ -1,135 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS/IT EVENTS</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS/IT EVENTS</title>
-  <link rel="stylesheet" href="./CS-IT-style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CS-IT-style.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./footer.css" />
+  </head>
 
-  <div class="container">
-    <input type="radio" name="slider" id="item-1" checked>
-    <input type="radio" name="slider" id="item-2">
-    <input type="radio" name="slider" id="item-3">
-    <input type="radio" name="slider" id="item-4">
-    <input type="radio" name="slider" id="item-5">
+  <body>
+    <!-- header starts -->
+    <nav>
+      <input type="checkbox" id="nav-toggle" />
+      <div><img class="logo" src="./logo.webp" /></div>
+      <ul class="links">
+        <li><a href="..\..\landing page\index.html">Home</a></li>
+        <li><a href="..\..\Events Page\main-page.html">Events</a></li>
+        <li><a href="..\..\gallery\index.html">Gallery</a></li>
+        <li><a href="..\..\Sponsors-Page\sponsors-index.html">Sponsors</a></li>
+        <li><a href="..\..\Timeline Page\timeline.html">Timeline</a></li>
+        <li><a href="..\..\TeamsPage\teams.html">Team</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <!-- header ends -->
+    <div class="container">
+      <input type="radio" name="slider" id="item-1" checked />
+      <input type="radio" name="slider" id="item-2" />
+      <input type="radio" name="slider" id="item-3" />
+      <input type="radio" name="slider" id="item-4" />
+      <input type="radio" name="slider" id="item-5" />
 
-    <div class="cards">
-      <label class="card" for="item-1" id="song-1">
-        <img
-          src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-          alt="event-1" draggable="false">
-      </label>
-      <label class="card" for="item-2" id="song-2">
-        <img
-          src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-          alt="event-2" draggable="false">
-      </label>
-      <label class="card" for="item-3" id="song-3">
-        <img
-          src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-          alt="event-3" draggable="false">
-      </label>
-      <label class="card" for="item-4" id="song-4">
-        <img src="./images.jpg" alt="event-4" draggable="false">
-      </label>
-      <label class="card" for="item-5" id="song-5">
-        <img src="./portrait-young-african-american-business-woman-black-peop-people-51712509.webp" alt="event-5"
-          draggable="false">
-      </label>
-    </div>
+      <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+          <img
+            src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+            alt="event-1"
+            draggable="false"
+          />
+        </label>
+        <label class="card" for="item-2" id="song-2">
+          <img
+            src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+            alt="event-2"
+            draggable="false"
+          />
+        </label>
+        <label class="card" for="item-3" id="song-3">
+          <img
+            src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+            alt="event-3"
+            draggable="false"
+          />
+        </label>
+        <label class="card" for="item-4" id="song-4">
+          <img src="./images.jpg" alt="event-4" draggable="false" />
+        </label>
+        <label class="card" for="item-5" id="song-5">
+          <img
+            src="./portrait-young-african-american-business-woman-black-peop-people-51712509.webp"
+            alt="event-5"
+            draggable="false"
+          />
+        </label>
+      </div>
 
-    <div class="player hidden">
-      <div class="upper-part">
-        <div class="info-area">
-          <label class="song-info" id="song-info-1">
-            <div class="title event-name">Bunker</div>
-            <div class="sub-line">
-              <div class="subtitle">Balthazar</div>
-            </div>
-          </label>
-          <label class="song-info" id="song-info-2">
-            <div class="title event-name">Words Remain</div>
-            <div class="sub-line">
-              <div class="subtitle">Moderator</div>
-            </div>
-          </label>
-          <label class="song-info" id="song-info-3">
-            <div class="title event-name">Falling Out</div>
-            <div class="sub-line">
-              <div class="subtitle">Otzeki</div>
-            </div>
-          </label>
-          <label class="song-info" id="song-info-4">
-            <div class="title event-name">Lush Life</div>
-            <div class="sub-line">
-              <div class="subtitle">Larrson</div>
-            </div>
-          </label>
-          <label class="song-info" id="song-info-5">
-            <div class="title event-name">Hilton</div>
-            <div class="sub-line">
-              <div class="subtitle">Cilan</div>
-            </div>
-          </label>
+      <div class="player hidden">
+        <div class="upper-part">
+          <div class="info-area">
+            <label class="song-info" id="song-info-1">
+              <div class="title event-name">Bunker</div>
+              <div class="sub-line">
+                <div class="subtitle">Balthazar</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-2">
+              <div class="title event-name">Words Remain</div>
+              <div class="sub-line">
+                <div class="subtitle">Moderator</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-3">
+              <div class="title event-name">Falling Out</div>
+              <div class="sub-line">
+                <div class="subtitle">Otzeki</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-4">
+              <div class="title event-name">Lush Life</div>
+              <div class="sub-line">
+                <div class="subtitle">Larrson</div>
+              </div>
+            </label>
+            <label class="song-info" id="song-info-5">
+              <div class="title event-name">Hilton</div>
+              <div class="sub-line">
+                <div class="subtitle">Cilan</div>
+              </div>
+            </label>
+          </div>
+          <button class="read-more" role="button" id="button">Read More</button>
         </div>
-        <button class="read-more" role="button" id="button">Read More</button>
+
+        <div class="progress-bar">
+          <span class="progress"></span>
+        </div>
+
+        <div id="wrapper" class="open">
+          <p class="description-of-event" id="description-of-event-1">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim.
+          </p>
+          <p class="description-of-event" id="description-of-event-2">
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+            Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+            dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+            ac, enim.
+          </p>
+          <p class="description-of-event" id="description-of-event-3">
+            Vivamus pharetra ipsum eu hendrerit consequat. Nulla vel augue
+            lorem. Orci varius natoque penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Proin id fermentum leo, eu accumsan
+            ligula. Mauris laoreet tristique lectus sed ultricies. Sed fringilla
+            orci ut porttitor vulputate.
+          </p>
+          <p class="description-of-event" id="description-of-event-4">
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+            ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+            tempus.
+          </p>
+          <p class="description-of-event" id="description-of-event-5">
+            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
+            libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
+            eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit
+            amet nibh. Donec sodales sagittis magna.
+          </p>
+        </div>
       </div>
 
-      <div class="progress-bar">
-        <span class="progress"></span>
-      </div>
-
-      <div id="wrapper" class="open">
-        <p class="description-of-event" id="description-of-event-1">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-          eu, pretium quis, sem. Nulla consequat massa quis enim.
-        </p>
-        <p class="description-of-event" id="description-of-event-2">
-          In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-          Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
-          eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-          eleifend ac, enim.
-        </p>
-        <p class="description-of-event" id="description-of-event-3">
-          Vivamus pharetra ipsum eu hendrerit consequat. Nulla vel
-          augue lorem. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Proin id fermentum
-          leo, eu accumsan ligula. Mauris laoreet tristique lectus sed
-          ultricies. Sed fringilla orci ut porttitor vulputate.
-        </p>
-        <p class="description-of-event" id="description-of-event-4">
-          Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-          Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-          ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
-          Maecenas tempus.
-        </p>
-        <p class="description-of-event" id="description-of-event-5">
-          Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
-          libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci
-          eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit
-          amet nibh. Donec sodales sagittis magna.
-        </p>
+      <div class="registration">
+        <a href="https://www.google.com" target="_blank"
+          ><button>Register Now!</button></a
+        >
       </div>
     </div>
-
-    <div class="registration">
-      <a href="https://www.google.com" target="_blank"><button>Register Now!</button></a>
+    <div class="footer-body">
+      <footer>
+        <!-- Add a div to contain the social media icons -->
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/igdtuwinnerve/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Innerveigdtuw"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/innerve/mycompany/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@InnerveIGDTUW"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">© Innerve 2023</p>
+      </footer>
     </div>
-  </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-  <script src='./CS-IT-design.js'></script>
-
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./CS-IT-design.js"></script>
+  </body>
 </html>
