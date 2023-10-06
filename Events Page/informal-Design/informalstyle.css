@@ -16,13 +16,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
-  font-family: 'DM Sans', sans-serif;
+  padding: 30px 20px;
+  font-family: "DM Sans", sans-serif;
   background-image: url(./informal1.png);
   background-size: cover;
 }
 
-input[type=radio] {
+input[type="radio"] {
   display: none;
 }
 
@@ -33,7 +33,7 @@ input[type=radio] {
   left: 0;
   right: 0;
   margin: auto;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
   cursor: pointer;
 }
 
@@ -63,23 +63,23 @@ img {
   object-fit: cover;
 }
 
-#item-1:checked~.cards #song-5,
-#item-2:checked~.cards #song-3,
-#item-4:checked~.cards #song-1,
-#item-5:checked~.cards #song-2,
-#item-3:checked~.cards #song-4 {
-  transform: translatex(-80%) scale(.6);
-  opacity: .2;
+#item-1:checked ~ .cards #song-5,
+#item-2:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-1,
+#item-5:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-4 {
+  transform: translatex(-80%) scale(0.6);
+  opacity: 0.2;
   z-index: -100;
 }
 
-#item-1:checked~.cards #song-3,
-#item-2:checked~.cards #song-1,
-#item-4:checked~.cards #song-2,
-#item-5:checked~.cards #song-4,
-#item-3:checked~.cards #song-5 {
-  transform: translatex(-40%) scale(.8);
-  opacity: .6;
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-4:checked ~ .cards #song-2,
+#item-5:checked ~ .cards #song-4,
+#item-3:checked ~ .cards #song-5 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.6;
   z-index: 100;
 
   img {
@@ -87,13 +87,13 @@ img {
   }
 }
 
-#item-1:checked~.cards #song-2,
-#item-2:checked~.cards #song-4,
-#item-4:checked~.cards #song-5,
-#item-5:checked~.cards #song-3,
-#item-3:checked~.cards #song-1 {
-  transform: translatex(40%) scale(.8);
-  opacity: .6;
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-4,
+#item-4:checked ~ .cards #song-5,
+#item-5:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.6;
   z-index: 100;
 
   img {
@@ -101,21 +101,21 @@ img {
   }
 }
 
-#item-1:checked~.cards #song-4,
-#item-2:checked~.cards #song-5,
-#item-4:checked~.cards #song-3,
-#item-5:checked~.cards #song-1,
-#item-3:checked~.cards #song-2 {
-  transform: translatex(80%) scale(.6);
-  opacity: .2;
+#item-1:checked ~ .cards #song-4,
+#item-2:checked ~ .cards #song-5,
+#item-4:checked ~ .cards #song-3,
+#item-5:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+  transform: translatex(80%) scale(0.6);
+  opacity: 0.2;
   z-index: -100;
 }
 
-#item-1:checked~.cards #song-1,
-#item-2:checked~.cards #song-2,
-#item-3:checked~.cards #song-3,
-#item-4:checked~.cards #song-4,
-#item-5:checked~.cards #song-5 {
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3,
+#item-4:checked ~ .cards #song-4,
+#item-5:checked ~ .cards #song-5 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1000;
@@ -169,17 +169,24 @@ img {
 
 .player {
   background-color: #ffd9b5;
-  background-image: linear-gradient(to bottom, #ffd9b5, #fdd4ad, #fcd1a8, #ffc690, #fac593);
+  background-image: linear-gradient(
+    to bottom,
+    #ffd9b5,
+    #fdd4ad,
+    #fcd1a8,
+    #ffc690,
+    #fac593
+  );
   border-radius: 8px;
   min-width: 240px;
   max-width: 300px;
   padding: 10px 10px;
-  transition: height .4s ease-in;
+  transition: height 0.4s ease-in;
   max-height: 700px;
 }
 
-.player.hidden{
-  display:none;
+.player.hidden {
+  display: none;
 }
 
 .upper-part {
@@ -241,26 +248,26 @@ img {
   position: absolute;
   top: 0;
   left: 10px;
-  transition: transform .4s ease-in;
+  transition: transform 0.4s ease-in;
 }
 
-#item-2:checked~.player #test {
+#item-2:checked ~ .player #test {
   transform: translateY(0);
 }
 
-#item-2:checked~.player #test {
+#item-2:checked ~ .player #test {
   transform: translateY(-40px);
 }
 
-#item-3:checked~.player #test {
+#item-3:checked ~ .player #test {
   transform: translateY(-80px);
 }
 
-#item-4:checked~.player #test {
+#item-4:checked ~ .player #test {
   transform: translateY(-120px);
 }
 
-#item-5:checked~.player #test {
+#item-5:checked ~ .player #test {
   transform: translateY(-160px);
 }
 
@@ -272,7 +279,7 @@ img {
   background-color: #ffe1a1;
   color: rgb(34, 22, 0);
   font-weight: 600;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 2px 10px;
   border-radius: 5px;
   border-color: #ffe1a1;
@@ -296,7 +303,7 @@ img {
 
 p.description-of-event {
   overflow: hidden;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #5e5b5e;
   font-size: smaller;
   height: 120px;
@@ -311,7 +318,7 @@ p.description-of-event {
   background-color: #311d00;
   color: #ffe1a1;
   font-weight: 600;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   padding: 7px 30px;
   border-radius: 13px;
   border-color: #ffe1a1;

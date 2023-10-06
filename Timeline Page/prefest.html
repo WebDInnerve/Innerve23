@@ -17,9 +17,47 @@
      rel="stylesheet"
      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
    />
+   
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
    <link rel="stylesheet" href="timeline.css" />
+   <link rel="stylesheet" href="./header.css">
+   <link rel="stylesheet" href="./footer.css" />
+
  </head>
  <body>
+           <!-- header starts -->
+           <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div><img class='logo' src="./logo.webp"/></div>
+           <ul class="links">
+               <li><a href="..\landing page\index.html">Home</a></li>
+               <li><a href="..\Events Page\main-page.html">Events</a></li>
+               <li><a href="..\gallery\index.html">Gallery</a></li>
+               <li><a href="..\Sponsors-Page\sponsors-index.html">Sponsors</a></li>
+               <li><a href="..\Timeline Page\timeline.html">Timeline</a></li>
+               <li><a href="..\TeamsPage\teams.html">Team</a></li>
+           </ul>
+           <label for="nav-toggle" class="icon-burger">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+           </label>
+        </nav>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+          <!-- header ends -->
  <div class="ag-timeline-block">
      <div class="ag-timeline_title-box">
        <div class="ag-timeline_tagline">
@@ -266,6 +304,41 @@
        </div>
      </section>
    </div>
+   <div class="footer-body">
+      <footer>
+        <!-- Add a div to contain the social media icons -->
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/igdtuwinnerve/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Innerveigdtuw"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/innerveigdtuw/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/innerve/mycompany/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@InnerveIGDTUW"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">© Innerve 2023</p>
+      </footer>
+    </div>
    <script
      type="module"
      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
