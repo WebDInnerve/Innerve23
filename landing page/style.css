@@ -76,33 +76,33 @@ body {
     bottom: 10%;
     height: 100%;
     border-radius: 4px;
-    animation: load 3s;
+    animation: load 3.5s;
 }
 
 @keyframes load {
     0% {
         width: 0;
-        background-color: #040D12;
+        background-color: #F1CC6E;
     }
 
     25% {
         width: 25%;
-        background-color: #1f1141;
+        background-color: #F1CC6E;
     }
 
     50% {
         width: 50%;
-        background-color: white;
+        background-color: #8B5E36;
     }
 
     75% {
         width: 75%;
-        background-color: white;
+        background-color: #4A3115;
     }
 
     100% {
         width: 100%;
-        background-color: white;
+        background-color: #170F0F;
     }
 
 }
@@ -110,27 +110,25 @@ body {
 @keyframes pulse {
     0% {
 
-        background-image: url("./bg3.png");
+        background-image: url("media/bg1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    /* 25% {
-
-        background-color: #1f1141;
-    } */
+    
 
     50% {
 
-        background-image: url("./bg2.png");
+        background-image: url("media/bg2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-
-    /* 75% {
-
-        background-color: #A2678A;
-    } */
 
     100% {
 
-        background-image: url("./bg1.png");
+        background-image: url("media/bg1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
 }
@@ -494,7 +492,12 @@ footer {
 }
 
 .text-container {
-    max-width: 450px;
+    max-width: 470px;
+    background-color: rgba(0, 0, 0 , 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
 }
 
 .text-container p {
@@ -620,12 +623,13 @@ footer {
         /* Adjust the font size for "Reality" */
     }
 
-    
-    
 
-    
+
+
+
     .text-content .img_txt .title.bg.right {
-        text-align: center; /* Optional: Center the text in case flexbox isn't supported */
+        text-align: center;
+        /* Optional: Center the text in case flexbox isn't supported */
         position: relative;
         top: 0;
         margin-top: 1px;
@@ -635,7 +639,8 @@ footer {
     }
 
     .text-content .title.bg.right span {
-        font-size: 3.5rem; /* Adjust the font size for mobile */
+        font-size: 3.5rem;
+        /* Adjust the font size for mobile */
     }
 
     .v_container {
@@ -667,3 +672,5 @@ footer {
         font-size: 4rem;
     }
 }
+
+
