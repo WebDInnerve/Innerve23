@@ -96,7 +96,7 @@ $(document).ready(function () {
   loaderTimeline
     .to(".loading", {
       opacity: 0,
-      delay: 2.5,
+      delay: 3,
     })
     .to(".loader", {
       opacity: 0,
