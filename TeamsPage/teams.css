@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "/header_footer/Header/header.css";
 *,
 *::before,
 *::after {
@@ -23,7 +24,7 @@ html {
 h1{
     font-family: 'Aladin', cursive;
     font-size: 7rem;
-    margin-top: 2%;
+    margin-top: 5%;
     color: #feffb9;
     text-shadow: 2px 2px 4px rgb(237, 145, 255);
 }
@@ -32,7 +33,7 @@ h3{
   margin-top:-50%;
   font-family: 'Aladin', cursive;
   font-size: 5rem;
-  z-index: 3;
+  z-index: 1;
   color: #421f1f;
   text-shadow: 2px 2px 4px rgb(255, 174, 0);
 }
@@ -50,7 +51,7 @@ p{
   /* background-image: url('darkgradient.png');
   background-size:cover; /* Adjust this property as needed
   height: 20vh; */
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   position: relative; /* Required for absolute positioning of child elements */
   overflow: hidden;
@@ -857,9 +858,3 @@ p{
   margin-top: 40px;
   margin-right: 40px;
 }
-
-
-
-
-
-

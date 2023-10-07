@@ -1,3 +1,5 @@
+@import "/header_footer/Header/header.css";
+
 *,
 *::after,
 *::before {
@@ -6,25 +8,26 @@
 
 :root {
 	font-size: 12px;
-	--color-text: rgba(255,255,255,0.95);
+	--color-text: rgba(255, 255, 255, 0.95);
 	--color-bg: #0c0b10;
 	--color-link: rgb(124 20 244 / 90%);
 	--color-bg-date: rgb(96 56 178 / 48%);
 	--color-link-hover: rgb(94 54 176 / 75%);
-	--color-border: rgba(177,177,177,0.3);
+	--color-border: rgba(177, 177, 177, 0.3);
 }
 
 body {
 	margin: 0;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: "ocr-a-std", monospace;
+	/* font-family: "ocr-a-std", monospace; */
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-image: url(../img/Mainpage-bg.png);
-  background-size: cover;
-  background-attachment: fixed;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 /* Page Loader */
@@ -59,7 +62,7 @@ body {
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
+		transform: scale3d(0.5, 0.5, 1);
 	}
 }
 
@@ -111,7 +114,7 @@ a:focus-visible {
 }
 
 .frame {
-	z-index: 1000;
+	/* z-index: 1; */
 	position: relative;
 	width: 100%;
 	display: grid;
@@ -127,7 +130,7 @@ a:focus-visible {
 }
 
 body #cdawrap {
-    justify-self: start;
+	justify-self: start;
 }
 
 .frame a {
@@ -157,13 +160,14 @@ body #cdawrap {
 
 .title {
 	font-weight: 400;
-	font-size: clamp(2rem,8.5vw,8rem);
+	font-size: clamp(2rem, 8.5vw, 8rem);
 	text-align: center;
 	margin: 10vh auto 5vh;
 	display: flex;
 	justify-content: center;
 	width: min-content;
 	border-bottom: 1px solid var(--color-border);
+	display: none;
 }
 
 .title span::first-letter {
@@ -176,9 +180,10 @@ body #cdawrap {
 	margin: 10vh auto 5vh;
 	justify-content: center;
 	font-weight: 400;
-  }
-  .waviy span {
-	
+}
+
+.waviy span {
+
 	position: relative;
 	display: inline-block;
 	font-size: 100px;
@@ -186,27 +191,30 @@ body #cdawrap {
 	text-transform: uppercase;
 	animation: flip 2s infinite;
 	animation-delay: calc(.5s * var(--i))
-	
-  }
-  @keyframes flip {
-	0%,80% {
-	  transform: rotateY(360deg) 
+}
+
+@keyframes flip {
+
+	0%,
+	80% {
+		transform: rotateY(360deg)
 	}
-  }
+}
 
 .subtitle {
 	text-align: center;
 }
 
-.events{
+.events {
 	width: min-content;
 	margin: 14vh auto 5vh;
 }
+
 .card-grid {
 	display: flex;
 	margin-right: 10vh;
 	grid-template-columns: 1fr;
-    min-width: 30vh;
+	min-width: 30vh;
 	/*border-top: 1px solid var(--color-border);*/
 }
 
@@ -216,230 +224,286 @@ body #cdawrap {
 }
 
 .card {
-	width: 60vh;
+	min-width: 55vh;
 	grid-template-rows: auto 1fr auto;
 	cursor: pointer;
 	position: relative;
-	min-height: 50vh;
+	min-height: 45vh;
 	padding: 4vw;
 	overflow: hidden;
-	border: 1px solid var(--color-border);	
+	border: 1px solid var(--color-border);
 	/*margin: 5vh auto;*/
 	margin-bottom: 5vh;
-	margin-left:15vh;
+	margin-left: 9vh;
 }
 
-#card-1{
-  animation-name: example;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
+#card-1 {
+	animation-name: example;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
 
-  -webkit-animation: example 15s infinite; /* Safari 4+ */
-  -moz-animation:    example 15s infinite; /* Fx 5+ */
-  -o-animation:      example 15s infinite; /* Opera 12+ */
-  animation:         example 15s infinite;
+	-webkit-animation: example 15s infinite;
+	/* Safari 4+ */
+	-moz-animation: example 15s infinite;
+	/* Fx 5+ */
+	-o-animation: example 15s infinite;
+	/* Opera 12+ */
+	animation: example 15s infinite;
 }
 
-@keyframes example{
-	0%, 100%{
-	  background-image: url("../images.jpg");
-	  background-size: cover;
-	}
-	25%{
-	  background-image: url("../img-5.jpg");
-	  background-size: cover;
-	}
-	50%{
-	  background-image: url("../img-4.jpg");
-	  background-size: cover;
-	}
-	75%{
-	  background-image: url("../img-3.jpg");
-	  background-size: cover;
-	}
-	100%{
-	  background-image: url("../img-5.jpg");
-	  background-size: cover;
-	}
- }
+@keyframes example {
 
- #card-2{
+	0%,
+	100% {
+		background-image: url("../images.jpg");
+		background-size: cover;
+	}
+
+	25% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+
+	50% {
+		background-image: url("../img-4.jpg");
+		background-size: cover;
+	}
+
+	75% {
+		background-image: url("../img-3.jpg");
+		background-size: cover;
+	}
+
+	100% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+}
+
+#card-2 {
 	animation-name: example-2;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-  
-	-webkit-animation: example-2 15s infinite; /* Safari 4+ */
-	-moz-animation:    example-2 15s infinite; /* Fx 5+ */
-	-o-animation:      example-2 15s infinite; /* Opera 12+ */
-	animation:         example-2 15s infinite;
-  }
-  
-  @keyframes example-2{
-	0%, 100%{
+
+	-webkit-animation: example-2 15s infinite;
+	/* Safari 4+ */
+	-moz-animation: example-2 15s infinite;
+	/* Fx 5+ */
+	-o-animation: example-2 15s infinite;
+	/* Opera 12+ */
+	animation: example-2 15s infinite;
+}
+
+@keyframes example-2 {
+
+	0%,
+	100% {
 		background-image: url("../img-4.jpg");
 		background-size: cover;
-	  }
-	  25%{
+	}
+
+	25% {
 		background-image: url("../img-3.jpg");
 		background-size: cover;
-	  }
-	  50%{
+	}
+
+	50% {
 		background-image: url("../img-5.jpg");
 		background-size: cover;
-	  }
-	  75%{
+	}
+
+	75% {
 		background-image: url("../img-2.webp");
 		background-size: cover;
-	  }
-	  100%{
+	}
+
+	100% {
 		background-image: url("../img1.jpg");
 		background-size: cover;
-	  }
-   }
+	}
+}
 
-   #card-3{
+#card-3 {
 	animation-name: example-3;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-  
-	-webkit-animation: example-3 15s infinite; /* Safari 4+ */
-	-moz-animation:    example-3 15s infinite; /* Fx 5+ */
-	-o-animation:      example-3 15s infinite; /* Opera 12+ */
-	animation:         example-3 15s infinite;
-  }
-  
-  @keyframes example-3{
-	0%, 100%{
+
+	-webkit-animation: example-3 15s infinite;
+	/* Safari 4+ */
+	-moz-animation: example-3 15s infinite;
+	/* Fx 5+ */
+	-o-animation: example-3 15s infinite;
+	/* Opera 12+ */
+	animation: example-3 15s infinite;
+}
+
+@keyframes example-3 {
+
+	0%,
+	100% {
 		background-image: url("../img-5.jpg");
 		background-size: cover;
-	  }
-	  25%{
+	}
+
+	25% {
 		background-image: url("../img1.jpg");
 		background-size: cover;
-	  }
-	  50%{
+	}
+
+	50% {
 		background-image: url("../img-2.webp");
 		background-size: cover;
-	  }
-	  75%{
+	}
+
+	75% {
 		background-image: url("../img-4.jpg");
 		background-size: cover;
-	  }
-	  100%{
+	}
+
+	100% {
 		background-image: url("../img-3.jpg");
 		background-size: cover;
-	  }
-   }
+	}
+}
 
-   #card-4{
+#card-4 {
 	animation-name: example-4;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-  
-	-webkit-animation: example-4 15s infinite; /* Safari 4+ */
-	-moz-animation:    example-4 15s infinite; /* Fx 5+ */
-	-o-animation:      example-4 15s infinite; /* Opera 12+ */
-	animation:         example-4 15s infinite;
-  }
-  
-  @keyframes example-4{
-	  0%, 100%{
+
+	-webkit-animation: example-4 15s infinite;
+	/* Safari 4+ */
+	-moz-animation: example-4 15s infinite;
+	/* Fx 5+ */
+	-o-animation: example-4 15s infinite;
+	/* Opera 12+ */
+	animation: example-4 15s infinite;
+}
+
+@keyframes example-4 {
+
+	0%,
+	100% {
 		background-image: url("../images.jpg");
 		background-size: cover;
-	  }
-	  25%{
+	}
+
+	25% {
 		background-image: url("../img-5.jpg");
 		background-size: cover;
-	  }
-	  50%{
+	}
+
+	50% {
 		background-image: url("../img-4.jpg");
 		background-size: cover;
-	  }
-	  75%{
+	}
+
+	75% {
 		background-image: url("../img-3.jpg");
 		background-size: cover;
-	  }
-	  100%{
+	}
+
+	100% {
 		background-image: url("../img-5.jpg");
 		background-size: cover;
-	  }
-   }
+	}
+}
 
-   #card-5{
+#card-5 {
 	animation-name: example-5;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-  
-	-webkit-animation: example-5 15s infinite; /* Safari 4+ */
-	-moz-animation:    example-5 15s infinite; /* Fx 5+ */
-	-o-animation:      example-5 15s infinite; /* Opera 12+ */
-	animation:         example-5 15s infinite;
-  }
-  
-  @keyframes example-5{
-	  0%, 100%{
-		background-image: url("../img-5.jpg");
-		background-size: cover;
-	  }
-	  25%{
-		background-image: url("../img-5.jpg");
-		background-size: cover;
-	  }
-	  50%{
-		background-image: url("../img-5.jpg");
-		background-size: cover;
-	  }
-	  75%{
-		background-image: url("../img-5.jpg");
-		background-size: cover;
-	  }
-	  100%{
-		background-image: url("../img-5.jpg");
-		background-size: cover;
-	  }
-   }
 
-   #card-6{
+	-webkit-animation: example-5 15s infinite;
+	/* Safari 4+ */
+	-moz-animation: example-5 15s infinite;
+	/* Fx 5+ */
+	-o-animation: example-5 15s infinite;
+	/* Opera 12+ */
+	animation: example-5 15s infinite;
+}
+
+@keyframes example-5 {
+
+	0%,
+	100% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+
+	25% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+
+	50% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+
+	75% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+
+	100% {
+		background-image: url("../img-5.jpg");
+		background-size: cover;
+	}
+}
+
+#card-6 {
 	animation-name: example-6;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-  
-	-webkit-animation: example-6 15s infinite; /* Safari 4+ */
-	-moz-animation:    example-6 15s infinite; /* Fx 5+ */
-	-o-animation:      example-6 15s infinite; /* Opera 12+ */
-	animation:         example-6 15s infinite;
-  }
-  
-  @keyframes example-6{
-	  0%, 100%{
+
+	-webkit-animation: example-6 15s infinite;
+	/* Safari 4+ */
+	-moz-animation: example-6 15s infinite;
+	/* Fx 5+ */
+	-o-animation: example-6 15s infinite;
+	/* Opera 12+ */
+	animation: example-6 15s infinite;
+}
+
+@keyframes example-6 {
+
+	0%,
+	100% {
 		background-image: url("../images.jpg");
 		background-size: cover;
-	  }
-	  15%{
+	}
+
+	15% {
 		background-image: url("../img-5.jpg");
 		background-size: cover;
-	  }
-	  40%{
+	}
+
+	40% {
 		background-image: url("../img-4.jpg");
 		background-size: cover;
-	  }
-	  55%{
+	}
+
+	55% {
 		background-image: url("../img-3.jpg");
 		background-size: cover;
-	  }
-	  70%{
+	}
+
+	70% {
 		background-image: url("../img-8.jpg");
 		background-size: cover;
-	  }
-	  85%{
+	}
+
+	85% {
 		background-image: url("../img-9.jpg");
 		background-size: cover;
-	  }
-	  100%{
+	}
+
+	100% {
 		background-image: url("../img-7.jpg");
 		background-size: cover;
-	  }
-   }
+	}
+}
 
 .card__img,
 .card__img-wrap,
@@ -484,13 +548,13 @@ body #cdawrap {
 	/*font-weight: 400;
 	font-size: clamp(1.5rem,5vw,2.5rem);*/
 	font-weight: 600;
-	font-size: clamp(2rem,7vw,3rem);
+	font-size: clamp(2rem, 7vw, 3rem);
 }
 
 .card__link {
 	position: relative;
 	font-weight: 400;
-	font-size: clamp(1.5rem,5vw,2rem);
+	font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 .card__link::before {
@@ -498,12 +562,12 @@ body #cdawrap {
 	margin-right: 10px;
 }
 
-@media screen and (max-width: 33em) {
+@media screen and (max-width: 350px) {
 	.grid {
-		grid-template-columns: repeat(2,1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.wavity span{
+	.wavity span {
 		font-size: 40px;
 	}
 
@@ -513,32 +577,50 @@ body #cdawrap {
 		margin: 10vh auto 5vh;
 		justify-content: center;
 		font-weight: 100;
-	  }
+		display: none;
+	}
+
+	.card {
+		min-height: 30vh;
+		min-width: 35vh;
+	}
+
+	.title {
+		font-weight: 400;
+		font-size: clamp(2rem, 8.5vw, 8rem);
+		text-align: center;
+		margin: 10vh auto 5vh;
+		display: flex;
+		justify-content: center;
+		width: min-content;
+		border-bottom: 1px solid var(--color-border);
+		margin-right: 30%;
+	}
+
+	.title span::first-letter {
+		opacity: 0.5;
+	}
 }
 
-@media screen and (max-width: 60em) {
-	.frame {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas: 'title title sponsor' 'back prev ...';
-		align-content: space-between;
-		justify-items: start;
-		grid-row-gap: 1.5rem;
-	}
+@media screen and (max-width: 900px) {
 	.card-grid {
 		/*grid-template-columns: repeat(1,1fr);*/
-		grid-template-columns: 1fr;
+		grid-template-columns: 2fr;
 		grid-template-rows: 1fr;
 		flex-wrap: wrap;
-	
-	}
-	body #cdawrap {
-	    justify-self: end;
+
 	}
 
-	.wavity span{
-		font-size: 40px;
+	.card {
+		min-width: 40vh;
+		min-height: 45vh;
 	}
+
+	body #cdawrap {
+		justify-self: end;
+	}
+
+
 
 	.waviy {
 		position: relative;
@@ -546,5 +628,33 @@ body #cdawrap {
 		margin: 10vh auto 5vh;
 		justify-content: center;
 		font-weight: 100;
-	  }
+		display: none;
+	}
+
+	.title {
+		font-weight: 400;
+		font-size: clamp(2rem, 8.5vw, 8rem);
+		text-align: center;
+		margin: 10vh auto 5vh;
+
+		display: flex;
+		justify-content: center;
+		width: min-content;
+		border-bottom: 1px solid var(--color-border);
+	}
+
+	.title span::first-letter {
+		opacity: 0.5;
+	}
+}
+
+@media screen and (max-width: 1248px) {
+	.card {
+		min-height: 40vh;
+		min-width: 55vh;
+	}
+
+	.wavity span {
+		font-size: 40px;
+	}
 }

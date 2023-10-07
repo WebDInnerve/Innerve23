@@ -1,9 +1,10 @@
+@import "/header_footer/Header/header.css";
 body {
     margin: 0;
     padding: 0;
     /* background-color: #15202b; */
     /* Dark bluish-green background */
-    font-family: 'Segoe Script', bold;
+    /* font-family: 'Segoe Script', bold; */
     background-image: url('background.png');
     background-attachment: fixed;
     /* background-size: cover; */
