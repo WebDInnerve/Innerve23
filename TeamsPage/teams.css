@@ -169,62 +169,26 @@ p{
 }
 
 
-/* Default styles for .cardbg */
-.cardbg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 50px;
-  right: 10%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 1;
-  transition: opacity 0.2s ease-in-out;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-/* Media query for screens with a maximum width of 768px */
-@media screen and (max-width: 432px){
-  .cardbg {
-      width: auto; /* Allow the image to size itself based on its content */
-      height: 700px; /* Allow the image to size itself based on its content */
-      width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 50px;
-    right: 43%;
+.cardbg{
+    position: relative;
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 100%; /* Make the image take up the full height of the container */
+    object-fit: cover; /* Preserve aspect ratio and cover the entire container */
+    position: absolute; /* Position the image relative to its container */
+    top: 10px; /* Position the image at the top of the container */
+    right: 10%;
     object-fit: cover;
     object-position: center;
-    opacity: 1;
+    /* z-index: 3; */
+    opacity: 1; /* Initially hidden */
     transition: opacity 0.2s ease-in-out;
     overflow: hidden;
     cursor: pointer;
-  }
+    
+    /* margin-bottom: 40px; */
+    /* transition: opacity 0.2s ease-in-out; */
+    /* box-shadow: 0 0 8px #fff; */
 }
-
-/* Media query for screens between 433px and 768px (Tablet) */
-@media screen and (min-width: 433px) and (max-width: 768px) {
-  .cardbg {
-      width: 100%;
-      height: 700px; /* Adjust the height as needed */
-      object-fit: cover;
-      position: absolute;
-      top: 50%;
-      position: absolute;
-      top: 50px;
-      right: 43%;
-      object-fit: cover;
-      object-position: center;
-      opacity: 1;
-      transition: opacity 0.2s ease-in-out;
-      overflow: hidden;
-  }
-}
-
 /* Remove the holo animation from the .cardbg element */
 .cardbg .holo {
   display: block;
@@ -237,7 +201,6 @@ p{
 
 
 .profile{
-
   position: absolute;
   top: 0;
   left: 32%;
@@ -249,7 +212,6 @@ p{
   object-fit: cover;
   margin-bottom: 40px;
   text-align: center;
-  
 }
 /* .profile:hover{
   box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5); Apply the blue glow effect to the image on hover 
@@ -293,15 +255,7 @@ p{
 }
 .card button:hover{
   background-color: #25a6b1
-}
-
-
-
-
-
-
- 
- 
+} 
 /* Styles for the popup container */
 /*.popup {
   display: block;
@@ -392,6 +346,28 @@ p{
     margin-bottom: -100px;
     top: 20%;
   }
+  .card.hide-holo{
+    margin: 5% 0% 5% 10% ;
+  }
+}
+@media (max-width: 389px) {
+  .profile {
+    width: 100%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -50px;
+    margin-bottom: -100px;
+    top: 20%;
+  }
+  .card.hide-holo{
+    margin: 5% 0% 5% 10% ;
+  }
+}
+@media (max-width: 480px) {
+  #myImage1 {
+    width: 40%;
+    height: auto;
+  }
 }
 @media (min-width: 769px) {
   #myImage1 {
@@ -423,6 +399,9 @@ p{
     margin-left: -1px;
     margin-top: 20px;
     top: 20%;
+  }
+  .card.hide-holo{
+    margin: 5% 0% 5% 10% ;
   }
 }
 @media (min-width: 769px) {
@@ -872,15 +851,11 @@ p{
   display: none;
 }
 
-
-
 .card {
   margin: 200px; /* Adjust the margin to increase the distance between cards */
   margin-bottom: 50px;
   margin-top: 40px;
   margin-right: 40px;
-
-  
 }
 
 
