@@ -202,7 +202,6 @@ p{
 
 
 .profile{
-
   position: absolute;
   top: 0;
   left: 32%;
@@ -214,7 +213,6 @@ p{
   object-fit: cover;
   margin-bottom: 40px;
   text-align: center;
-  
 }
 /* .profile:hover{
   box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5); Apply the blue glow effect to the image on hover 
@@ -258,15 +256,7 @@ p{
 }
 .card button:hover{
   background-color: #25a6b1
-}
-
-
-
-
-
-
- 
- 
+} 
 /* Styles for the popup container */
 /*.popup {
   display: block;
@@ -357,6 +347,28 @@ p{
     margin-bottom: -100px;
     top: 20%;
   }
+  .card.hide-holo{
+    margin: 5% 0% 5% 10% ;
+  }
+}
+@media (max-width: 389px) {
+  .profile {
+    width: 100%; /* Further reduce the width for even smaller screens */
+    height: auto; /* Automatically adjust the height */
+    position: absolute;
+    margin-left: -50px;
+    margin-bottom: -100px;
+    top: 20%;
+  }
+  .card.hide-holo{
+    margin: 5% 0% 5% 10% ;
+  }
+}
+@media (max-width: 480px) {
+  #myImage1 {
+    width: 40%;
+    height: auto;
+  }
 }
 @media (min-width: 769px) {
   #myImage1 {
@@ -388,6 +400,9 @@ p{
     margin-left: -1px;
     margin-top: 20px;
     top: 20%;
+  }
+  .card.hide-holo{
+    margin: 5% 0% 5% 10% ;
   }
 }
 @media (min-width: 769px) {
@@ -837,13 +852,9 @@ p{
   display: none;
 }
 
-
-
 .card {
   margin: 200px; /* Adjust the margin to increase the distance between cards */
   margin-bottom: 50px;
   margin-top: 40px;
   margin-right: 40px;
-
-  
 }
