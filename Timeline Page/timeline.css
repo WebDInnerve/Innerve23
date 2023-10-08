@@ -1,4 +1,6 @@
 @import "/header_footer/Header/header.css";
+@import "/header_footer//footer/footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 body {
   /* background-image: url("https://wallpapercave.com/wp/wp5472434.png"); */
   background-attachment: fixed;
@@ -237,6 +239,7 @@ a.menu {
   font-weight: bold;
   font-size: 28px;
   color: #c1e1c1 /*#FF0*/;
+  font-family: 'Orbitron',sans-serif;
 }
 .ag-timeline-card_item {
   display: inline-block;
@@ -597,7 +600,8 @@ h1 {
   color: #c7f0eb;
   z-index: 2;
   letter-spacing: 10px;
-  font-family: "Nintendoid1";
+  /* font-family: "Nintendoid1"; */
+  font-family: 'Orbitron',sans-serif;
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 3px 9px #28c2c7);
 }

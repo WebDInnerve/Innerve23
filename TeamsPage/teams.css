@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import "/header_footer/Header/header.css";
+@import "/header_footer/footer/footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 *,
 *::before,
 *::after {
@@ -47,7 +49,7 @@ p{
 /* .hide-holo .holo {
   display: none;
 } */
-.container {
+.containert {
   /* background-image: url('darkgradient.png');
   background-size:cover; /* Adjust this property as needed
   height: 20vh; */
@@ -55,6 +57,9 @@ p{
   text-align: center;
   position: relative; /* Required for absolute positioning of child elements */
   overflow: hidden;
+}
+.containert h1{
+  font-family: 'Orbitron',sans-serif;
 }
 .holo {
   position: absolute;
@@ -90,6 +95,10 @@ p{
 .holo + .holo {
   animation-duration: 0.75s;
   opacity: 0.1;
+}
+.subheading{
+  font-weight: bolder;
+  font-family: 'Orbitron',sans-serif;
 }
 
 @keyframes float {
@@ -165,7 +174,7 @@ p{
   background-size: contain;
   background-repeat: no-repeat;
   animation: float 1s infinite alternate;
-  z-index: 3;
+  z-index: 0;
   
 }
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import "/header_footer/Header/header.css";
+@import "/header_footer/footer/footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 
 * {
     padding: 0;
@@ -422,29 +424,31 @@ footer {
 }
 
 .title {
-    font-family: w;
     width: 450px;
     position: relative;
     height: 110px;
     overflow: hidden;
+    font-family: 'Orbitron',sans-serif;
 }
 
 .bg {
-    font-size: 100px;
+    font-size: 3rem;
+    font-family: 'Orbitron',sans-serif;
 }
 
-.sm {
-    font-size: 35px;
-    height: 40px;
-}
+
 
 .left {
     left: -25%;
 }
 
 .right {
+    font-size: 3rem;
     top: 50px;
-    left: 75%;
+    left: 65%;
+}
+.n{
+    left: 55%;
 }
 
 .title span {
@@ -486,6 +490,7 @@ footer {
     font-family: w;
     display: flex;
     text-transform: capitalize;
+    font-family: 'Chivo',sans-serif;
 }
 
 .bottom {
@@ -670,8 +675,76 @@ footer {
     }
 
     .tv .bg {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 }
 
+.social-icons-footer{
+    position: absolute;
+    bottom:7.5%;
+}
+.social-icons-footer ul li {
+    position: relative;
+    display: block;
+    color: #ad1111;
+    font-size: 30px;
+    height:60px;
+    width: 60px;
+    /* background: #171515; */
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: transparent;
+  }
+.copyright{
+    margin-top: 2rem;
+}
+.social-icons-footer ul li:nth-child(1){
+    padding-left: 16px;
 
+  }
+  .social-icons-footer ul li:nth-child(2){
+    padding-left: 18px;
+
+  }
+  .social-icons-footer ul li:nth-child(3){
+    padding-left: 18px;
+
+  }
+  .social-icons-footer ul li:nth-child(4){
+    padding-left: 18px;
+
+  }
+  .social-icons-footer ul li:nth-child(5){
+    padding-left: 12.5px;
+
+  }
+.social-icons-footer ul li:nth-child(1):before {
+    background: transparent;
+
+  }
+  
+  .social-icons-footer ul li:nth-child(2):before {
+    background: transparent;
+  }
+  
+  .social-icons-footer ul li:nth-child(3):before {
+    background: transparent;
+
+  }
+  
+  .social-icons-footer ul li:nth-child(4):before {
+    background: transparent;
+  }
+  
+  .social-icons-footer ul li:nth-child(5):before {
+    background: transparent;
+  }
+  
+  .social-icons-footer ul li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
+  }
+  

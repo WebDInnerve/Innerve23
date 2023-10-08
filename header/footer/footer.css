@@ -11,43 +11,41 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: #262626;
   margin: 0;
   padding: 0;
   position: absolute;
   left: 0;
-  box-shadow: 0px 0px 20px 2px rgb(0,0,0,0.1);
-
+  bottom: 0;
   width: 100vw;
 }
-.social-icons-footer {
-
+.social-icons {
+  /* Added this selector for the surrounding div */
   display: flex;
 }
 
-.social-icons-footer ul {
-
+.social-icons ul {
+  /* Modified selector to target ul inside the .social-icons div */
   display: flex;
 }
 
 a:link {
-  color: #666; 
+  color: #666; /* Red color for unvisited links */
 }
 
-
+/* Changing the link color for visited links */
 a:visited {
-  color: #666; 
+  color: #666; /* Purple color for visited links */
 }
 
-.social-icons-footer ul li {
+.social-icons ul li {
   position: relative;
   display: block;
   color: #ad1111;
   font-size: 30px;
-  height: 55px;
-  width: 55px;
+  height: 60px;
+  width: 60px;
   background: #171515;
-  /* background-color: transparent; */
   line-height: 60px;
   border-radius: 50%;
   margin: 0 15px;
@@ -55,7 +53,7 @@ a:visited {
   transition: 0.5s;
 }
 
-.social-icons-footer ul li:before {
+.social-icons ul li:before {
   position: absolute;
   content: "";
   top: 0;
@@ -68,76 +66,76 @@ a:visited {
   transition: 0.5s;
 }
 
-.social-icons-footer ul li:nth-child(1):before {
+.social-icons ul li:nth-child(1):before {
   background: #4267b2;
 }
 
-.social-icons-footer ul li:nth-child(2):before {
+.social-icons ul li:nth-child(2):before {
   background: #1da1f2;
 }
 
-.social-icons-footer ul li:nth-child(3):before {
+.social-icons ul li:nth-child(3):before {
   background: #e1306c;
 }
 
-.social-icons-footer ul li:nth-child(4):before {
+.social-icons ul li:nth-child(4):before {
   background: #2867b2;
 }
 
-.social-icons-footer ul li:nth-child(5):before {
+.social-icons ul li:nth-child(5):before {
   background: #ff0000;
 }
 
-.social-icons-footer ul li:hover:before {
+.social-icons ul li:hover:before {
   filter: blur(3px);
   transform: scale(1.2);
 }
 
-.social-icons-footer ul li:nth-child(1):hover:before {
+.social-icons ul li:nth-child(1):hover:before {
   box-shadow: 0 0 15px #4267b2;
 }
 
-.social-icons-footer ul li:nth-child(2):hover:before {
+.social-icons ul li:nth-child(2):hover:before {
   box-shadow: 0 0 15px #1da1f2;
 }
 
-.social-icons-footer ul li:nth-child(3):hover:before {
+.social-icons ul li:nth-child(3):hover:before {
   box-shadow: 0 0 15px #e1306c;
 }
 
-.social-icons-footer ul li:nth-child(4):hover:before {
+.social-icons ul li:nth-child(4):hover:before {
   box-shadow: 0 0 15px #2867b2;
 }
 
-.social-icons-footer ul li:nth-child(5):hover:before {
+.social-icons ul li:nth-child(5):hover:before {
   box-shadow: 0 0 15px #ff0000;
 }
 
-.social-icons-footer ul li:nth-child(1):hover {
+.social-icons ul li:nth-child(1):hover {
   color: #456cba;
   box-shadow: 0 0 15px #4267b2;
   text-shadow: 0 0 15px #4267b2;
 }
 
-.social-icons-footer ul li:nth-child(2):hover {
+.social-icons ul li:nth-child(2):hover {
   color: #26a4f2;
   box-shadow: 0 0 15px #1da1f2;
   text-shadow: 0 0 15px #1da1f2;
 }
 
-.social-icons-footer ul li:nth-child(3):hover {
+.social-icons ul li:nth-child(3):hover {
   color: #e23670;
   box-shadow: 0 0 15px #e1306c;
   text-shadow: 0 0 15px #e1306c;
 }
 
-.social-icons-footer ul li:nth-child(4):hover {
+.social-icons ul li:nth-child(4):hover {
   color: #2a6cbb;
   box-shadow: 0 0 15px #2867b2;
   text-shadow: 0 0 15px #2867b2;
 }
 
-.social-icons-footer ul li:nth-child(5):hover {
+.social-icons ul li:nth-child(5):hover {
   color: #ff1a1a;
   box-shadow: 0 0 15px #ff0000;
   text-shadow: 0 0 15px #ff0000;
@@ -150,46 +148,47 @@ a:visited {
   margin-bottom: 0;
 }
 
-
+/* Media query for smaller screens */
 @media (max-width: 768px) {
-  .social-icons-footer ul li {
-    font-size: 24px;
-    height: 48px;
-    width: 48px; 
-    line-height: 48px; 
-    margin: 0 10px;
+  .social-icons ul li {
+    font-size: 24px; /* Decreased font size for smaller screens */
+    height: 48px; /* Decreased icon size for smaller screens */
+    width: 48px; /* Decreased icon size for smaller screens */
+    line-height: 48px; /* Decreased line height for smaller screens */
+    margin: 0 10px; /* Decreased margin for smaller screens */
   }
 
-
-  .social-icons-footer ul li a:active {
-    color: inherit; 
+  /* Adding styles for mobile click effect using :active pseudo-class */
+  .social-icons ul li a:active {
+    color: inherit; /* Reset the color to inherit from the parent */
   }
 
-  .social-icons-footer ul li:nth-child(1) a:active {
+  /* Adding styles for individual icon click effects */
+  .social-icons ul li:nth-child(1) a:active {
     color: #456cba;
     box-shadow: 0 0 15px #4267b2;
     text-shadow: 0 0 15px #4267b2;
   }
 
-  .social-icons-footer ul li:nth-child(2) a:active {
+  .social-icons ul li:nth-child(2) a:active {
     color: #26a4f2;
     box-shadow: 0 0 15px #1da1f2;
     text-shadow: 0 0 15px #1da1f2;
   }
 
-  .social-icons-footer ul li:nth-child(3) a:active {
+  .social-icons ul li:nth-child(3) a:active {
     color: #e23670;
     box-shadow: 0 0 15px #e1306c;
     text-shadow: 0 0 15px #e1306c;
   }
 
-  .social-icons-footer ul li:nth-child(4) a:active {
+  .social-icons ul li:nth-child(4) a:active {
     color: #2a6cbb;
     box-shadow: 0 0 15px #2867b2;
     text-shadow: 0 0 15px #2867b2;
   }
 
-  .social-icons-footer ul li:nth-child(5) a:active {
+  .social-icons ul li:nth-child(5) a:active {
     color: #ff1a1a;
     box-shadow: 0 0 15px #ff0000;
     text-shadow: 0 0 15px #ff0000;
