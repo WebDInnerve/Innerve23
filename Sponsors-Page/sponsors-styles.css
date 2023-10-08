@@ -1,4 +1,6 @@
 @import "/header_footer/Header/header.css";
+@import "/header_footer/footer/footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -23,6 +25,7 @@ body {
     color: #C6C6C6;
     font-weight: 1px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Orbitron',sans-serif;
 }
 
 /* @media (orientation: landscape) {
@@ -50,6 +53,7 @@ body {
     font-family: badrobotfont;
     /* Pixelated neon bluish font */
     /* text-shadow: 0 0 7px #C6C6C6, 0 0 7px #C6C6C6, 0 0 7px #C6C6C6; */
+    font-family:'Orbitron',sans-serif;
 }
 
 @media screen and (max-width:80em){
