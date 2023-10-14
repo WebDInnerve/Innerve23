@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "/header_footer/Header/header.css";
+@import "/header_footer/footer/footer.css";
+
+body{
+    background-image: url("./background_teams.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.teampage{
+    margin-top: 5rem;
+}
+.containerteam{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teamcard{
+    background-image: url("./card.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:30vw;
+    height:60vh;
+    display:inline-block;
+    margin:1rem;
+    animation: float 1s infinite alternate;
+    margin-top: 4rem;
+    /* box-shadow: 0px 20px 10px -15px white; 
+    border-radius: 100px; */}
+.teamleadimg{
+    width:10vw;
+    height:10vw;
+    margin-left: 10vw;
+    margin-top: 15vh;
+    box-shadow: 0px 0px 20px 2px rgb(0,0,0,1);
+    margin-bottom: 1.5rem;
+}
+.teamleadname{
+    width:30vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.teambranchname{
+    width:30vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.socialiconteam{
+
+    margin-top: 1rem;
+    position: relative;
+    left:42vh;
+    bottom:45vh;
+    width:2rem;
+    height:2rem;
+    background-color: rgb(57, 57, 248);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 2px rgb(0,0,0,1);
+}
+.teamname{
+    width: 100vw;
+    text-align: center;
+    font-size: 4rem;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+.iconteamblue{
+    color:white;
+    margin-right: 0rem;
+    margin-top: 0.5rem;
+
+}
+.iconteampink{
+    color:rgb(244, 20, 113);
+    margin-left: 1rem;
+}
+
+@keyframes float {
+    from {
+      will-change: unset;
+      transform: translateY(-10px);
+    }
+    to {
+      will-change: transform;
+      transform: translateY(-30px);
+    }
+  }
+  @keyframes holographic {
+    from {
+      will-change: box-shadow;
+      box-shadow:
+        0 -75px 5px rgba(100, 100, 100, 0.1), /* Light Purple */
+        0 -1px 2px rgba(100, 100, 100, 0.1), /* Light Purple */
+        0 -45px 5px rgba(168, 153, 168, 0.1), /* Light Purple */
+        0 -2px 3px rgba(168, 153, 168, 0.1), /* Light Purple */
+        0 -3px 4px rgba(100, 100, 100, 0.1), /* Light Purple */
+        0 -4px 6px rgba(168, 153, 168, 0.1), /* Light Purple */
+        0 -5px 10px rgba(168, 153, 168, 0.1), /* Light Purple */
+        0 -7px 20px rgba(168, 153, 168, 0.3), /* Light Purple */
+        0 -10px 30px rgba(168, 153, 168, 0.1), /* Light Purple */
+        0 -15px 40px rgba(168, 153, 168, 0.3), /* Light Purple */
+        0 -25px 50px rgba(168, 153, 168, 0.3), /* Light Purple */
+        0 -35px 60px rgba(168, 153, 168, 0.3), /* Light Purple */
+        0 -45px 70px rgba(168, 153, 168, 0.3), /* Light Purple */
+        0 -65px 80px rgba(168, 153, 168, 0.1), /* Light Purple */
+        0 -75px 90px rgba(132, 130, 96, 0.9); /* Light Purple */
+    }
+    to {
+      will-change: unset;
+      box-shadow:
+        0 -1px 5px rgba(215, 191, 216, 0.3), /* Light Purple */
+        0 -1px 2px rgba(215, 191, 216, 0.5), /* Light Purple */
+        0 -1px 5px rgba(215, 191, 216, 0.3), /* Light Purple */
+        0 -2px 3px rgba(215, 191, 216, 0.5), /* Light Purple */
+        0 -3px 4px rgba(215, 191, 216, 0.5), /* Light Purple */
+        0 -4px 6px rgba(215, 191, 216, 0.5), /* Light Purple */
+        0 -5px 7px rgba(215, 191, 216, 0.7), /* Light Purple */
+        0 -7px 10px rgba(215, 191, 216, 0.7), /* Light Purple */
+        0 -10px 15px rgba(215, 191, 216, 0.7), /* Light Purple */
+        0 -15px 20px rgba(215, 191, 216, 0.7), /* Light Purple */
+        0 -25px 25px rgba(215, 191, 216, 0.7), /* Light Purple */
+        0 -35px 30px rgba(215, 191, 216, 0.7), /* Light Purple */
+        0 -45px 35px rgba(215, 191, 216, 0.9), /* Light Purple */
+        0 -65px 40px rgba(215, 191, 216, 1), /* Light Purple */
+        0 -75px 50px rgba(215, 191, 216, 1); /* Light Purple */
+    }
+  }
+  @media(max-width:1024px)
+  {
+    body{
+        background-image: url("./background_teams.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .teamcard{
+        background-image: url("./card.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40vw;
+        height:60vh;
+        display: inline-block;
+        margin:1rem;
+        animation: float 1s infinite alternate;
+    
+    }
+    .teamleadimg{
+        width:15vw;
+        height:15vw;
+        margin-left: 12vw;
+        margin-top: 15vh;
+    }
+    .teamleadname{
+        width:40vw;
+        text-align: center;
+    }
+    .teambranchname{
+        width:40vw;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        left:45vh;
+        bottom:50vh;
+        width:2rem;
+        height:2rem;
+    
+    }
+    .teamname{
+        width: 100vw;
+        text-align: center;
+        font-size: 4rem;
+        color:white;
+    }
+    .iconteamblue{
+        color:white;
+    
+    }
+    .iconteampink{
+        color:rgb(244, 20, 113);
+        margin-left: 1rem;
+    }
+  }
+  @media(max-width:912px)
+  {
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    left:20vh;
+    bottom:20vh;
+    width:2rem;
+    height:2rem;
+    
+    }
+    .teamleadimg{
+        width:15vw;
+        height:15vw;
+        margin-left: 12vw;
+        margin-top: 20vh;
+    }
+  }
+@media(max-width:900px)
+{
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    left:22vh;
+    bottom:22vh;
+    width:2rem;
+    height:2rem;
+    
+    }
+    .teamleadimg{
+        width:15vw;
+        height:15vw;
+        margin-left: 12vw;
+        margin-top: 20vh;
+    }
+}
+  @media(max-width:500px)
+  {
+    body{
+        background-image: url("./background_teams.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .teamcard{
+        background-image: url("./card.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width:90vw;
+        height:60vh;
+        display: inline-block;
+        margin:1rem;
+        animation: float 1s infinite alternate;
+        margin-left: 2rem;
+    
+    }
+    .teamleadimg{
+        width:40vw;
+        height:40vw;
+        margin-left: 25vw;
+        margin-top: 15vh;
+        margin-bottom: 1rem;
+    }
+    .teamleadname{
+        width:90vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .teambranchname{
+        width:90vw;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    left:30vh;
+    bottom:35vh;
+    width:2rem;
+    height:2rem;
+    
+    }
+    .teamname{
+        width: 100vw;
+        text-align: center;
+        font-size: 3rem;
+        color:white;
+    }
+    .iconteamblue{
+        color:white;
+        margin-right: 0rem;
+    
+    }
+    .iconteampink{
+        color:rgb(244, 20, 113);
+        margin-left: 1rem;
+    }
+  }
+@media(max-width:375px)
+{
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    left:38vh;
+    bottom:42vh;
+    width:2rem;
+    height:2rem;
+    
+    }
+}
+@media(max-width:360px)
+{
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    left:32vh;
+    bottom:38vh;
+    width:2rem;
+    height:2rem;
+    
+    }
+}
