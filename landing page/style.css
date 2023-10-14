@@ -517,7 +517,9 @@ section {
 .fa-arrow-right-long {
     transform: translateX(20px);
 }
-
+.topic{
+    font-size: 1.5rem;
+}
 @media screen and (max-width: 991px) {
 
     .text-container p {
@@ -677,7 +679,7 @@ section {
     display: block;
     color: #ad1111;
     font-size: 30px;
-    height:40px;
+    height:60px;
     width: 60px;
     /* background: #171515; */
     line-height: 60px;
@@ -738,3 +740,81 @@ section {
     transform: scale(1.2);
   }
   
+@media(max-width:900px)
+{
+    .social-icons-footer ul li {
+        position: relative;
+        display: block;
+        color: #ad1111;
+        font-size: 30px;
+        height:60px;
+        width: 60px;
+        /* background: #171515; */
+        line-height: 60px;
+        border-radius: 50%;
+        margin: 0px;
+        cursor: pointer;
+        transition: 0.5s;
+        background: transparent;
+      }
+    .copyright{
+        position: absolute;
+        bottom: 30px;
+    }
+    .social-icons-footer ul li:nth-child(1){
+        padding-left: 16px;
+    
+      }
+      .social-icons-footer ul li:nth-child(2){
+        padding-left: 18px;
+    
+      }
+      .social-icons-footer ul li:nth-child(3){
+        padding-left: 18px;
+    
+      }
+      .social-icons-footer ul li:nth-child(4){
+        padding-left: 18px;
+    
+      }
+      .social-icons-footer ul li:nth-child(5){
+        padding-left: 12.5px;
+    
+      }
+    .social-icons-footer ul li:nth-child(1):before {
+        background: transparent;
+    
+      }
+      
+      .social-icons-footer ul li:nth-child(2):before {
+        background: transparent;
+      }
+      
+      .social-icons-footer ul li:nth-child(3):before {
+        background: transparent;
+    
+      }
+      
+      .social-icons-footer ul li:nth-child(4):before {
+        background: transparent;
+      }
+      
+      .social-icons-footer ul li:nth-child(5):before {
+        background: transparent;
+      }
+      
+      .social-icons-footer ul li:hover:before {
+        filter: blur(3px);
+        transform: scale(1.2);
+      }
+}
+@media(max-width:900px)
+{
+    .text-container{
+        padding-bottom: 4rem;
+    }
+    .social-icons-footer{
+        z-index: 1000;
+    }
+    
+}
