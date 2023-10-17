@@ -771,3 +771,6 @@ html.has-scroll-dragging {
 		top:70px;
 	}
 }
+.nav__list a:hover{
+color:grey;
+}

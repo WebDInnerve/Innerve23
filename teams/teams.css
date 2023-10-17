@@ -66,6 +66,9 @@ body{
     font-size: 4rem;
     color:white;
     font-family: 'Orbitron', sans-serif;
+    margin-top: 5rem;
+    
+
 }
 .iconteamblue{
     color:white;
@@ -126,6 +129,18 @@ body{
         0 -45px 35px rgba(215, 191, 216, 0.9), /* Light Purple */
         0 -65px 40px rgba(215, 191, 216, 1), /* Light Purple */
         0 -75px 50px rgba(215, 191, 216, 1); /* Light Purple */
+    }
+  }
+  @media(max-width:1280px)
+  {
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        left:35vh;
+        bottom:35vh;
+        width:2rem;
+        height:2rem;
+    
     }
   }
   @media(max-width:1024px)
@@ -277,6 +292,7 @@ body{
         text-align: center;
         font-size: 3rem;
         color:white;
+        margin-bottom: 3rem;
     }
     .iconteamblue{
         color:white;
@@ -313,4 +329,23 @@ body{
     height:2rem;
     
     }
+}
+@media(max-width:280px)
+{
+    .socialiconteam{
+        text-align: center;
+        margin-top: 0.5rem;
+        position: relative;
+    left:28vh;
+    bottom:38vh;
+    width:2rem;
+    height:2rem;
+    
+    }
+}
+header{
+    margin-top: -5rem;
+}
+.nav__list a{
+    text-decoration: none;
 }

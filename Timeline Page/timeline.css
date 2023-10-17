@@ -1143,3 +1143,6 @@ h1 {
     font-size: 34px; /* Decreased font size for mobile */
   }
 }
+.nav__list a:hover{
+  text-decoration: none;
+}

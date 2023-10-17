@@ -1,5 +1,5 @@
 @import "/header_footer/Header/header.css";
-
+@import url("/header_footer/footer/footer.css");
 *,
 *::after,
 *::before {
@@ -14,6 +14,9 @@
 	--color-bg-date: rgb(96 56 178 / 48%);
 	--color-link-hover: rgb(94 54 176 / 75%);
 	--color-border: rgba(177, 177, 177, 0.3);
+}
+html,body{
+	overflow-x: hidden;
 }
 
 body {
@@ -224,7 +227,7 @@ body #cdawrap {
 }
 
 .card {
-	min-width: 55vh;
+	min-width: 25vw;
 	grid-template-rows: auto 1fr auto;
 	cursor: pointer;
 	position: relative;
@@ -234,7 +237,7 @@ body #cdawrap {
 	border: 1px solid var(--color-border);
 	/*margin: 5vh auto;*/
 	margin-bottom: 5vh;
-	margin-left: 9vh;
+	margin-left: 5vw;
 }
 
 #card-1 {
@@ -561,50 +564,24 @@ body #cdawrap {
 	content: '+';
 	margin-right: 10px;
 }
-
-@media screen and (max-width: 350px) {
-	.grid {
-		grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1248px) {
+	.card {
+		min-height: 40vh;
+		min-width: 25vw;
+		margin-left: 5vw;
+		
 	}
 
 	.wavity span {
 		font-size: 40px;
 	}
-
-	.waviy {
-		position: relative;
-		text-align: center;
-		margin: 10vh auto 5vh;
-		justify-content: center;
-		font-weight: 100;
-		display: none;
-	}
-
-	.card {
-		min-height: 30vh;
-		min-width: 35vh;
-	}
-
-	.title {
-		font-weight: 400;
-		font-size: clamp(2rem, 8.5vw, 8rem);
-		text-align: center;
-		margin: 10vh auto 5vh;
-		display: flex;
-		justify-content: center;
-		width: min-content;
-		border-bottom: 1px solid var(--color-border);
-		margin-right: 30%;
-	}
-
-	.title span::first-letter {
-		opacity: 0.5;
-	}
 }
 
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 1000px) {
 	.card-grid {
-		/*grid-template-columns: repeat(1,1fr);*/
+		
 		grid-template-columns: 2fr;
 		grid-template-rows: 1fr;
 		flex-wrap: wrap;
@@ -612,8 +589,9 @@ body #cdawrap {
 	}
 
 	.card {
-		min-width: 40vh;
-		min-height: 45vh;
+		min-width: 90vw;
+		min-height: 40vh;
+		margin-left: 6vw;
 	}
 
 	body #cdawrap {
@@ -648,13 +626,43 @@ body #cdawrap {
 	}
 }
 
-@media screen and (max-width: 1248px) {
-	.card {
-		min-height: 40vh;
-		min-width: 55vh;
+@media screen and (max-width: 350px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.wavity span {
 		font-size: 40px;
+	}
+
+	.waviy {
+		position: relative;
+		text-align: center;
+		margin: 10vh auto 5vh;
+		justify-content: center;
+		font-weight: 100;
+		display: none;
+	}
+
+	.card {
+		min-height: 40vh;
+		min-width: 90vw;
+		margin-left: 5vw;
+	}
+
+	.title {
+		font-weight: 400;
+		font-size: clamp(2rem, 8.5vw, 8rem);
+		text-align: center;
+		margin: 10vh auto 5vh;
+		display: flex;
+		justify-content: center;
+		width: min-content;
+		border-bottom: 1px solid var(--color-border);
+		margin-right: 30%;
+	}
+
+	.title span::first-letter {
+		opacity: 0.5;
 	}
 }
