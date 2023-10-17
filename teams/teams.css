@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import "/header_footer/Header/header.css";
-@import "/header_footer/footer/footer.css";
+@import "../header_footer/Header/header.css";
+@import "../header_footer/footer/footer.css";
 
 body{
     background-image: url("./background_teams.jpeg");

@@ -1,5 +1,5 @@
-@import "/header_footer/Header/header.css";
-@import "/header_footer/footer/footer.css";
+@import "../header_footer/Header/header.css";
+@import "../header_footer/footer/footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 
 body, html {
