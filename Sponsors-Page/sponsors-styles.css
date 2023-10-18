@@ -53,6 +53,7 @@ body {
     /* Pixelated neon bluish font */
     /* text-shadow: 0 0 7px #C6C6C6, 0 0 7px #C6C6C6, 0 0 7px #C6C6C6; */
     font-family:'Orbitron',sans-serif;
+    margin-top: 5rem;
 }
 
 @media screen and (max-width:80em){
@@ -91,6 +92,7 @@ body {
         /* Pixelated neon bluish font */
         /* text-shadow: 0 0 7px #09acac, 0 0 7px #09acac, 0 0 7px #09acac; */
         /* text-shadow: 0 0 7px #C6C6C6, 0 0 7px #C6C6C6, 0 0 7px #C6C6C6; */
+        margin-top: 5rem;
     }
     .sponsor-logo {
         position: relative;
@@ -144,6 +146,7 @@ body {
         font-family: badrobotfont;
         font-size: 300%;
         font-family:'Orbitron',sans-serif;
+        margin-top: 5rem;
         /* Pixelated neon bluish font */
         /* text-shadow: 0 0 7px #09acac, 0 0 7px #09acac, 0 0 7px #09acac; */
         /* text-shadow: 0 0 7px #C6C6C6, 0 0 7px #C6C6C6, 0 0 7px #C6C6C6; */
@@ -211,6 +214,7 @@ body {
         font-family: badrobotfont;
         font-size: 300%;
         font-family:'Orbitron',sans-serif;
+        margin-top: 5rem;
         /* Pixelated neon bluish font */
         /* text-shadow: 0 0 7px #09acac, 0 0 7px #09acac, 0 0 7px #09acac; */
         /* text-shadow: 0 0 7px #C6C6C6, 0 0 7px #C6C6C6, 0 0 7px #C6C6C6; */
