@@ -1,5 +1,5 @@
-@import "../header_footer/Header/header.css";
-@import "../header_footer/footer/footer.css";
+@import "../../header_footer/Header/header.css";
+@import "../../header_footer/footer/footer.css";
 *,
 *::after,
 *::before {

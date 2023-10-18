@@ -2,8 +2,8 @@
 @import "../header_footer/footer/footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 body {
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     /* background-color: #15202b; */
     /* Dark bluish-green background */
     /* font-family: 'Segoe Script', bold; */
@@ -16,10 +16,9 @@ body {
 
 .header {
     text-align: center;
-    margin-top: 50px;
 }
 
-.title-sponsors{
+.title-sponsors{ 
     /* padding: 0; */
     text-align: center;
     color: #C6C6C6;
