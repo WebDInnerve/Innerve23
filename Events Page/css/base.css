@@ -38,7 +38,7 @@ body {
 .js .loading::after {
 	content: '';
 	position: fixed;
-	z-index: 1000;
+	/* z-index: 1000; */
 }
 
 .js .loading::before {
@@ -527,7 +527,7 @@ body #cdawrap {
 }
 
 .card__img {
-	z-index: -1;
+	/* z-index: -1; */
 	pointer-events: none;
 	--columns: 0;
 	--rows: 0;
@@ -557,12 +557,17 @@ body #cdawrap {
 	font-weight: 400;
 	font-size: clamp(1.5rem, 5vw, 2rem);
 	font-family: 'Orbitron',sans-serif;
-	color:black;
+	z-index:1000;
+	color:#131217;
 }
 
 .card__link::before {
 	content: '+';
 	margin-right: 10px;
+	color:#131217;
+}
+.card a{
+	color:#131217;
 }
 @media screen and (max-width: 1248px) {
 	.card {
@@ -666,3 +671,9 @@ body #cdawrap {
 		opacity: 0.5;
 	}
 }
+/* .card{
+	z-index:100;
+}
+header:active{
+	z-index:200;
+} */
