@@ -629,8 +629,15 @@ body #cdawrap {
 	.title span::first-letter {
 		opacity: 0.5;
 	}
-}
 
+	
+}
+@media(max-width:900px)
+{
+	.card__link{
+z-index:0;
+	}
+}
 @media screen and (max-width: 350px) {
 	.grid {
 		grid-template-columns: repeat(2, 1fr);
@@ -677,3 +684,9 @@ body #cdawrap {
 header:active{
 	z-index:200;
 } */
+.nav__list-item{
+	font-size: 2.5rem;
+}
+header{
+	overflow-y:hidden
+}
