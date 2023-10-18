@@ -421,11 +421,12 @@ section {
     height: 110px;
     overflow: hidden;
     font-family: 'Orbitron',sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .left {
-    left: -25%;
+    left: -40%;
+    top:-40%
 }
 
 .right {
@@ -811,10 +812,16 @@ section {
 @media(max-width:900px)
 {
     .text-container{
-        padding-bottom: 4rem;
+        padding-bottom: 6rem;
     }
     .social-icons-footer{
         z-index: 1000;
     }
     
+}
+@media(max-width:1000px)
+{
+    .left{
+        left:-25%;
+    }
 }

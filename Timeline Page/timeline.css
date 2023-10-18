@@ -604,6 +604,7 @@ h1 {
   font-family: 'Orbitron',sans-serif;
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 3px 9px #28c2c7);
+  margin-top: -5rem;
 }
 
 .demo {
