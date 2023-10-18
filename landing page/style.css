@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import "../header_footer/Header/header.css";
 @import "../header_footer/footer/footer.css";
-@import "../header_footer/Header/header.css";
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 
 * {
@@ -675,11 +674,11 @@ section {
 .social-icons-footer{
     position: absolute;
     bottom:7.5%;
+    background: transparent;
 }
 .social-icons-footer ul li {
     position: relative;
     display: block;
-    color: #ad1111;
     font-size: 30px;
     height:60px;
     width: 60px;
