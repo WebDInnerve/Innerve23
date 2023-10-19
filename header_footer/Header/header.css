@@ -105,6 +105,14 @@
 	z-index: -1;
 }
 
+/* Add a style for the disabled links */
+.nav__list-item.disabled {
+	pointer-events:none; /* Disable click events */
+	cursor: auto !important; 
+	/* Add any other styles for disabled links */
+  }
+  
+
 .nav__list-item:hover:before {
 	width: 100%;
 }
