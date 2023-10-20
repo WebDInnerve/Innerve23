@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import "../header_footer/Header/header.css";
+@import "../header_footer/header2/header.css";
 @import "../header_footer/footer/footer.css";
 
 body{
@@ -349,4 +349,7 @@ header{
 }
 .nav__list a{
     text-decoration: none;
+}
+.menuheader a{
+    color:white;
 }

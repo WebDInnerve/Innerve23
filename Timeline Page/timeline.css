@@ -1,4 +1,4 @@
-@import "../header_footer/Header/header.css";
+@import "../header_footer/header2/header.css";
 @import "../header_footer//footer/footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100&family=Orbitron:wght@400;600;700;900&family=Poppins:wght@200&family=Rubik+Microbe&display=swap');
 body {
@@ -141,8 +141,8 @@ a.menu {
 }
 .ag-timeline_title-box {
   padding: 0 0 30px;
-
   text-align: center;
+  margin-top: -15vh;
 }
 .ag-timeline_tagline {
   font-size: 40px;
@@ -481,6 +481,7 @@ a.menu {
 @media only screen and (max-width: 639px) {
   .ag-timeline_title {
     font-size: 60px;
+
   }
 
   .ag-timeline-card_info {
@@ -598,13 +599,12 @@ h1 {
   line-height: 1;
   display: inline-block;
   color: #c7f0eb;
-  z-index: 2;
+  z-index: 0;
   letter-spacing: 10px;
   /* font-family: "Nintendoid1"; */
   font-family: 'Orbitron',sans-serif;
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 3px 9px #28c2c7);
-  margin-top: -5rem;
 }
 
 .demo {
@@ -1143,7 +1143,15 @@ h1 {
   .hero {
     font-size: 34px; /* Decreased font size for mobile */
   }
+  .ag-timeline_title-box {
+    padding: 0 0 30px;
+    text-align: center;
+    margin-top: -20vh;
+  }
 }
 .nav__list a:hover{
   text-decoration: none;
+}
+header{
+  z-index:20000;
 }
