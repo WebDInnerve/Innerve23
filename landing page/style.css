@@ -192,6 +192,11 @@ a {
     font-weight: 100;
 } */
 
+.headertop {
+    position: sticky;
+    top: 0;
+}
+
 
 .btn {
     font-weight: 500;
