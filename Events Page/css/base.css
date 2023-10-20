@@ -1,4 +1,4 @@
-@import "../../header_footer/Header/header.css";
+@import "../../header_footer/header2/header.css";
 @import url("../../header_footer/footer/footer.css");
 *,
 *::after,
@@ -163,7 +163,7 @@ body #cdawrap {
 
 .title{
 	text-align: center;
-	margin: 10vh auto 5vh;
+	margin: 2vh auto 0;
 	display: flex;
 	justify-content: center;
 	width: min-content;
@@ -557,7 +557,7 @@ body #cdawrap {
 	font-weight: 400;
 	font-size: clamp(1.5rem, 5vw, 2rem);
 	font-family: 'Orbitron',sans-serif;
-	z-index:1000;
+	z-index:1;
 	color:#131217;
 }
 
@@ -688,5 +688,5 @@ header:active{
 	font-size: 2.5rem;
 }
 header{
-	overflow-y:hidden
+	z-index:10000;
 }

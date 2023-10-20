@@ -1,4 +1,4 @@
-@import "../../header_footer/Header/header.css";
+@import "../../header_footer/header2/header.css";
 @import "../../header_footer/footer/footer.css";
 *,
 *::after,
@@ -121,7 +121,8 @@ a:focus-visible {
 main {
 	overflow: hidden;
 	position: relative;
-	top: 80px;
+	top: 0px;
+	margin-top: -5vh;
 
 }
 
@@ -225,7 +226,7 @@ main::after {
 
 .column-wrap {
 	position: relative;
-	z-index: 1;
+	z-index: -1;
 	display: flex;
 	flex-direction: column;
 	/* padding: 5vh 0 15vh; */
@@ -365,7 +366,6 @@ main::after {
 
 .content__item-text::before {
 	content: '';
-	z-index: 1000;
 	pointer-events: none;
 	background: linear-gradient(to top, var(--color-bg), transparent);
 	position: absolute;
@@ -773,4 +773,7 @@ html.has-scroll-dragging {
 }
 .nav__list a:hover{
 color:grey;
+}
+header{
+	z-index:10000;
 }
