@@ -33,12 +33,16 @@ body {
 	overflow-x: hidden;
 }
 
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #000;
+    /* border-radius: 10px; */
+}
+
 /* Page Loader */
-.js .loading::before,
+/* .js .loading::before,
 .js .loading::after {
 	content: '';
 	position: fixed;
-	/* z-index: 1000; */
 }
 
 .js .loading::before {
@@ -67,7 +71,7 @@ body {
 		opacity: 1;
 		transform: scale3d(0.5, 0.5, 1);
 	}
-}
+} */
 
 a {
 	text-decoration: none;

@@ -20,6 +20,7 @@ body {
   font-family: "DM Sans", sans-serif;
   background-image: url(./Bg.png);
   background-size: cover;
+  overflow: hidden;
 }
 
 input[type="radio"] {
